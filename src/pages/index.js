@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
@@ -30,8 +31,11 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`nightmarejs教程`}
+      description="nightmare文档教程">
+      <Head>
+        <meta name="baidu-site-verification" content="code-lqln1Vu82i" />
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
